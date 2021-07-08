@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+
+{%block title%}
+Index
+{%endblock%}
+
+{% block css %}
+<link href="stylesheets/indexStyle.css" rel="stylesheet" />
+<link href="stylesheets/athleteCardStyle.css", rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="main-athlete-card">
+    {% for result in data %}
+    {% include "athleteCard.html" %}
+    {%endfor%}
+</div>
+{% endblock %}

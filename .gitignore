@@ -1,0 +1,12 @@
+.vscode
+.idea
+node_modules
+*-lock.json
+*.lock
+build
+out
+*.env
+.env.*
+*.out
+*.o
+*.log
