@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{%block body%}
+
+<ul>
+    {%for member in teamMembers%}
+    <li>Member Name: {{member.name}}</li>
+    <li>Member Profile Url: {{member.profilePicUrl | urlize | safe}}</li>
+    <li>Member LinkedIn Profile: {{member.linkedInProfileUrl | urlize | safe}}</li>
+    <li>Member Designation: {{member.designation}}</li>
+    {%endfor%}
+</ul>
+
+{%endblock%}
