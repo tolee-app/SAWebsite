@@ -13,7 +13,8 @@
  * @type {Array<TeamMemberModel>}
  *
  * */
-const teamMembers = [
+
+const coreTeamMembers = [
 	{
 		name: 'Abc',
 		profilePicUrl: 'https://google.com',
@@ -22,6 +23,20 @@ const teamMembers = [
 	},
 ];
 
+const teamMembers = [
+	...coreTeamMembers,
+	{
+		name: 'Abc',
+		profilePicUrl: 'https://google.com',
+		designation: 'HOD',
+		linkedInProfileUrl: 'https://linkedin.com/in/'
+	},
+];
+
+
+module.exports.getCoreTeamMembers = function () {
+	return coreTeamMembers;
+};
 
 /**
  *

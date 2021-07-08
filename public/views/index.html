@@ -1,18 +1,469 @@
 {% extends "base.html"%}
-
 {%block title%}
-Index
+SportsApp
 {%endblock%}
 
-{% block css %}
-<link href="stylesheets/indexStyle.css" rel="stylesheet" />
-<link href="stylesheets/athleteCardStyle.css", rel="stylesheet">
-{% endblock %}
-
 {% block body %}
-<div class="main-athlete-card">
-    {% for result in data %}
-    {% include "athleteCard.html" %}
-    {%endfor%}
+{%block navigationList%}
+
+<li class="nav-li">
+    <a class="page-scroll" href="#aboutus">About Us</a>
+</li>
+<li class="nav-li">
+    <a class="page-scroll" href="#journey">Journey</a>
+</li>
+<li class="nav-li">
+    <a class="page-scroll" href="#our_team">Team</a>
+</li>
+<li class="nav-li">
+    <a class="page-scroll" href="/blogs">Blogs</a>
+</li>
+{%endblock%}
+<section id="main">
+    <div class="main-left">
+        <h1 class="heading-text"><span>Empowering</span> Sports Stars Of Tomorrow</h1>
+        <a href="https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp" target="_blank">
+            <img src="assets/googleplay.png" alt="googlePlay">
+        </a>
+    </div>
+
+    <!--<div class="main-left">
+        <h1 class="heading-text"><span>Empowering</span> Sports Stars Of Tomorrow</h1>
+        <a href="https://bit.ly/Download_SportsApp_APKLink">
+            <img alt="googlePlay" src="assets/Icons/download.png">
+        </a>
+    </div>-->
+
+    <div class="main-right">
+
+        <video autoplay loop muted>
+            <source src="assets/website_video_background.m4v" type="video/mp4">
+        </video>
+
+        <div class="main-gradient"></div>
+    </div>
+
+</section>
+
+<div class="sportsApp-container">
+    <section id="aboutus">
+        <div class="aboutus-heading">
+            <h1 class="heading-text">About us</h1>
+        </div>
+        <div class="aboutus-cards">
+            <div class="aboutus-card">
+                <img class="feature-icon" src="assets/aboutus/connection icon.svg10.png">
+                <p class="feature-name">Networking</p>
+                <p class="feature-detail">Connect via Instant messaging with Coaches, Fellow <span
+                        id="more">Athletes, Physios, Nutritionists and other Industry Professionals.</span><span
+                        id="dots"><button id="myBtn" onclick="myFunction()">...Read more</button></span></p>
+
+            </div>
+
+            <div class="aboutus-card">
+                <img class="feature-icon" src="assets/aboutus/askMeIcon.png">
+                <p class="feature-name">#ASKME</p>
+                <p class="feature-detail">Put up your sports-related queries which are then answered by <span
+                        id="more4"> Senior Coaches, Veteran Athletes and Similar Professionals, from the
+                            industry.</span><span id="dots4"><button id="myBtn4" onclick="myFunction4()">...Read
+                                more</button></span></p>
+
+            </div>
+            <div class="aboutus-card">
+                <img class="feature-icon" src="assets/aboutus/sponsorship icon.svg1.png">
+                <p class="feature-name">Sponsorship</p>
+                <p class="feature-detail">Apply for endorsement deals and collaboration <span id="more3">
+                            opportunities for kit, nutrition, apparel, etc; with a plethora of brand partners on the
+                            platform
+                            .</span><span id="dots3"><button id="myBtn3" onclick="myFunction3()">...Read
+                                more</button></span></p>
+            </div>
+            <div class="aboutus-card">
+                <img class="feature-icon" src="assets/aboutus/Event icon.png">
+                <p class="feature-name">Events</p>
+                <p class="feature-detail">Get regular updates on sports events happening near you.</p>
+
+            </div>
+            <div class="aboutus-card">
+                <img class="feature-icon" src="assets/aboutus/Sports job icon.png">
+                <p class="feature-name">Sports Job</p>
+                <p class="feature-detail">Receive updates for job openings within the sports industry.</p>
+            </div>
+            <div class="aboutus-card">
+                <img class="feature-icon" src="assets/aboutus/My value.png">
+                <p class="feature-name">My Value</p>
+                <p class="feature-detail">Get to know about your current 'Market Value' using the ‘My <span
+                        id="more2"> value’ feature. And get exciting endorsement deals.
+                            .</span><span id="dots2"><button id="myBtn2" onclick="myFunction2()">...Read
+                                more</button></span></p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="journey">
+
+        <div class="journey-left">
+
+            <div class="section-head">
+                <h1 class="heading-text">OUR JOURNEY</h1>
+            </div>
+
+            <p class="journey-details">“The only impossible journey is the one you never begin.” <br>- Anthony
+                Robins</p>
+
+            <div class="card-row" id="number-div">
+
+                <div class="cards">
+                    <img class="journey-icon" src="assets/download.png">
+
+                    <h4>
+                            <span class='numscroller' data-delay='7' data-increment='400' data-max='100000' data-min='0'>
+
+                                0
+
+                            </span>
+                        +
+                    </h4>
+
+                    <p>Downloads</p>
+
+
+                </div>
+
+                <div class="cards">
+                    <img class="journey-icon" src="assets/players.png">
+
+                    <h4>
+                            <span class='numscroller' data-delay='7' data-increment='400' data-max='90000' data-min='0'>
+                                0
+                            </span>
+                        +
+                    </h4>
+
+                    <p>Athletes</p>
+
+                </div>
+
+                <div class="cards">
+                    <img class="journey-icon" src="assets/coaches.png">
+
+                    <h4>
+                            <span class='numscroller' data-delay='9' data-increment='20' data-max='3500' data-min='0'>
+                                0
+                            </span>
+                        +
+                    </h4>
+
+                    <p style="width: 95%;">Coaches</p>
+
+                </div>
+
+                <div class="cards">
+                    <img class="journey-icon" src="assets/academies.png">
+
+                    <h4>
+                            <span class='numscroller' data-delay='11' data-increment='10' data-max='500' data-min='0'>
+                                0
+                            </span>
+                        +
+                    </h4>
+
+                    <p>Sports Academies</p>
+
+                </div>
+
+                <div class="cards">
+                    <img class="journey-icon" src="assets/sponsors.png">
+
+                    <h4>
+                            <span class='numscroller' data-delay='1' data-increment='1' data-max='30' data-min='0'>
+                                0
+                            </span>
+                        +
+                    </h4>
+
+                    <p>Sponsors</p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="journey-right">
+            <!-- Slider
+            <div class="journey-slider">
+                <div class="journey-slide-div">
+
+                </div>
+                <div class="journey-slide-div">
+                    <img src="assets/journey.jpg" alt="Journey-Image">
+                </div>
+            </div> -->
+
+            <div class="carousel slide journey-slider" data-interval="1500" data-ride="carousel"
+                 id="carouselExampleSlidesOnly">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="Journey-Image" src="assets/journey/image1.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Journey-Image" src="assets/journey/image2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Journey-Image" src="assets/journey/image3.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Journey-Image" src="assets/journey/image4.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Journey-Image" src="assets/journey/image5.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Journey-Image" src="assets/journey/image6.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Journey-Image" src="assets/journey/image7.png">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Journey-Image" src="assets/journey/image8.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="sponsors">
+
+        <h1>Our Brand Partners</h1>
+        <p class="sponsors-details">We are delighted to have you on board and become a part of this journey on
+            Empowering Sports Stars of Tomorrow.</p>
+
+        <div class="slider2">
+            <div class="slider-div2"><img alt="Alcis" class="sponsor-img" src="assets/Brand Partners/1_Alcis.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="NFS" class="sponsor-img" src="assets/Brand Partners/2_Proathlix.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="NFS" class="sponsor-img" src="assets/Brand Partners/3_NFS.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="Cosco" class="sponsor-img" src="assets/Brand Partners/4_Cosco.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="NFS" class="sponsor-img" src="assets/Brand Partners/5_Welcure.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="NFS" class="sponsor-img" src="assets/Brand Partners/6_SteelBird.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="NFS" class="sponsor-img" src="assets/Brand Partners/7_Steadfast.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="Hoverrobotix" class="sponsor-img"
+                                          src="assets/Brand Partners/8_Hoverrobotics.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="NFS" class="sponsor-img" src="assets/Brand Partners/9_Kica.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="NFS" class="sponsor-img" src="assets/Brand Partners/10_FastUp.png"
+                                          style="margin: auto;"></div>
+            <div class="slider-div2"><img alt="NFS" class="sponsor-img" src="assets/Brand Partners/11_Hammer.png"
+                                          style="margin: auto;"></div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h1>Testimonials</h1>
+        <p class="testimonials-details">Your feedback is what helps us push hard and become better every day .</p>
+
+        <div class="slider1">
+
+            <div class="slider-div slider-head">
+                <img alt="Academies" class="slider-head-img" src="assets/academies.png" style="margin: auto;">
+
+                <p class="slider-name">Academies</p>
+            </div>
+
+            <div class="slider-div">
+                <img class="slider-img" src="assets/academy1.jpg" style="margin: auto;">
+
+                <p class="slider-name">South Paw Boxing Academy</p>
+                <p class="slide-text">"Helped our players with Sponsorships. This app also promotes smaller
+                    academies. Academy students find relevant training and drill videos on SportsApp. Great work
+                    guys!!"</p>
+            </div>
+
+            <div class="slider-div">
+                <img class="slider-img" src="assets/academy2.jpg" style="margin: auto;">
+                <p class="slider-name">Uttaranchal Boys Cricket Academy</p>
+                <p class="slide-text">"They created a well crafted promotional video for us completely free of cost.
+                    We find frequent leads in Delhi NCR on this app."</p>
+            </div>
+
+            <div class="slider-div slider-head">
+                <img alt="Academies" class="slider-head-img" src="assets/coaches.png" style="margin: auto;">
+                <p class="slider-name">Coaches</p>
+            </div>
+
+            <div class="slider-div">
+                <img class="slider-img" src="assets/coach1.jpg" style="margin: auto;">
+                <p class="slider-name">Coach K.K. Singh</p>
+                <p class="slide-text">"Lovely to find and interact with lots of senior coaches on this app. Great
+                    initiative."</p>
+            </div>
+
+            <div class="slider-div">
+                <img class="slider-img" src="assets/coach2.jpg" style="margin: auto;">
+                <p class="slider-name">Coach Sanjay rawat</p>
+                <p class="slide-text">"SportsApp made us a brilliant Academy video and helped our players with
+                    sponsorships. We regularly highlight our training drills on SportsApp."</p>
+            </div>
+
+            <div class="slider-div slider-head">
+                <img alt="Academies" class="slider-head-img" src="assets/players.png" style="margin: auto;">
+                <p class="slider-name">Players</p>
+            </div>
+
+            <div class="slider-div"><img class="slider-img" src="assets/player1.jpg" style="margin: auto;">
+                <p class="slider-name">Amit Raj</p>
+                <p class="player-detail">International MMA Fighter</p>
+                <p class="slide-text">"It's really easy to land Sponsorship on SportsApp through your profile.
+                    SportsApp is for people who genuinely want to pursue a career in sports."</p>
+            </div>
+
+            <div class="slider-div">
+                <img class="slider-img" src="assets/player2.jpg" style="margin: auto;">
+                <p class="slider-name">Himanshi Antil</p>
+                <p class="player-detail">International Taekwondo Player</p>
+                <p class="slide-text">"A great way to support athletes. Highly recommended!!"</p>
+            </div>
+
+            <div class="slider-div"><img class="slider-img" src="assets/player3.jpg" style="margin: auto;">
+                <p class="slider-name">Indraajit Patel</p>
+                <p class="player-detail">Youth Olympian, Mumbai Marathon Winner</p>
+                <p class="slide-text">"It is easy to connect with brands for collaboration and sponsorships. Timely
+                    updates regarding events and trials help a lot."</p>
+            </div>
+
+            <div class="slider-div"><img class="slider-img" src="assets/player4.jpg" style="margin: auto;">
+                <p class="slider-name">Kapil Chaudhary</p>
+                <p class="player-detail">International Badminton Player</p>
+                <p class="slide-text">"Indian Sports needed such a platform."</p>
+            </div>
+
+            <div class="slider-div"><img class="slider-img" src="assets/player5.jpg" style="margin: auto;">
+                <p class="slider-name">Nisar Ahmad</p>
+                <p class="player-detail">Sprinter, 100m Gold winner at Khelo India Games</p>
+                <p class="slide-text">"A must-have app for budding athletes out there."</p>
+            </div>
+        </div>
+    </section>
 </div>
+
+<section id="our_team">
+    <div class="section-head">
+        <h1 class="heading-text">OUR TEAM</h1>
+    </div>
+
+    <div class="card-row">
+        <div class="cards">
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/member1.jpg">
+                    <a class="linkedin-link" href="https://www.linkedin.com/in/shankmishra/" target="_blank">
+
+                        <img class="linkedin-logo" src="assets/LINKEDIN.png">
+
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name"> Shashank Mishra</h4>
+                    <p class="member-position">Founder And CEO</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="cards">
+
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" id="member2" src="assets/Mohit.png">
+                    <a class="linkedin-link" href="https://www.linkedin.com/in/mohit-yadav-17b550115/"
+                       target="_blank">
+                        <img class="linkedin-logo" src="assets/LINKEDIN.png">
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name">Mohit Yadav</h4>
+                    <p class="member-position">Head Of Operations</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+
+
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/Himanshu.png">
+                    <a class="linkedin-link" href="https://www.linkedin.com/in/himanshu-nain/" target="_blank"><img
+                            class="linkedin-logo" src="assets/LINKEDIN.png"> </a>
+                </div>
+                <div class="member-detail">
+                    <h4 class="member-name">Himanshu Nain</h4>
+                    <p class="member-position">Head Of Technology</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="cards">
+
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/member4.jpg">
+                    <a class="linkedin-link" href="https://www.linkedin.com/in/prashant-chandra-096174147/"
+                       target="_blank">
+                        <img class="linkedin-logo" src="assets/LINKEDIN.png"> </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name">Prashant Chandra</h4>
+                    <p class="member-position">Head Of Sales</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="cards">
+
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" id="member5" src="assets/member5.jpg">
+                    <a class="linkedin-link" href="https://www.linkedin.com/in/deepak-kadian-809412175"
+                       target="_blank">
+                        <img class="linkedin-logo" src="assets/LINKEDIN.png">
+                    </a>
+
+                </div>
+                <div class="member-detail">
+                    <h4 class="member-name">Deepak Kadian</h4>
+                    <p class="member-position">Head Of Design</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+<section id="meet_our_team">
+    <div class="meet_section_head">
+        <a class="meet_button" href="/team">Meet the whole team</a>
+    </div>
+</section>
 {% endblock %}

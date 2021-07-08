@@ -2,13 +2,253 @@
 
 {%block body%}
 
-<ul>
-    {%for member in teamMembers%}
-    <li>Member Name: {{member.name}}</li>
-    <li>Member Profile Url: {{member.profilePicUrl | urlize | safe}}</li>
-    <li>Member LinkedIn Profile: {{member.linkedInProfileUrl | urlize | safe}}</li>
-    <li>Member Designation: {{member.designation}}</li>
-    {%endfor%}
-</ul>
+<section id="our_team">
+    <div class="section-head">
+        <h1 class="heading-text">OUR TEAM</h1>
+    </div>
+    <div class="card-row">
+        <div class="cards">
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/member1.jpg">
+                    <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/shankmishra/"
+                            target="_blank">
 
+                        <img class="linkedin-logo" src="assets/LINKEDIN.png">
+
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name"> Shashank Mishra</h4>
+                    <p class="member-position">Founder And CEO</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="cards">
+
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" id="member2" src="assets/Mohit.png">
+                    <a class="linkedin-link" href="https://www.linkedin.com/in/mohit-yadav-17b550115/"
+                       target="_blank">
+                        <img class="linkedin-logo" src="assets/LINKEDIN.png">
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name">Mohit Yadav</h4>
+                    <p class="member-position">Head Of Operations</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="cards">
+
+
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/Himanshu.png">
+                    <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/himanshu-nain/" target="_blank"><img
+                            class="linkedin-logo" src="assets/LINKEDIN.png"> </a>
+                </div>
+                <div class="member-detail">
+                    <h4 class="member-name">Himanshu Nain</h4>
+                    <p class="member-position">Head Of Technology</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="cards">
+
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/member4.jpg">
+                    <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/prashant-chandra-096174147/"
+                            target="_blank">
+                        <img class="linkedin-logo" src="assets/LINKEDIN.png"> </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name">Prashant Chandra</h4>
+                    <p class="member-position">Head Of Sales</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="cards">
+
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" id="member5" src="assets/member5.jpg">
+                    <a class="linkedin-link" href="https://www.linkedin.com/in/deepak-kadian-809412175"
+                       target="_blank">
+                        <img class="linkedin-logo" src="assets/LINKEDIN.png">
+                    </a>
+
+                </div>
+                <div class="member-detail">
+                    <h4 class="member-name">Deepak Kadian</h4>
+                    <p class="member-position">Head Of Design</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="card-row" id="btn">
+        <div class="cards">
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/whole team/Amit.png">
+                    <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/MAmitNair"
+                            target="_blank">
+
+                        <img class="linkedin-logo" src="assets/Icons/White linkedin.svg">
+
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name"> Amit Nair</h4>
+                    <p class="member-position">Senior Marketing Manager</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cards">
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/whole team/Mozib.png">
+                    <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/md-mozib-783165162/"
+                            target="_blank">
+
+                        <img class="linkedin-logo" src="assets/Icons/White linkedin.svg">
+
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name"> Md. Mozib</h4>
+                    <p class="member-position">Graphic Designer</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="cards">
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/whole team/Harshit.png">
+                    <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/harshit-bansal-026652156/"
+                            target="_blank">
+
+                        <img class="linkedin-logo" src="assets/Icons/White linkedin.svg">
+
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name"> Harshit Bansal</h4>
+                    <p class="member-position">Associate Operations Manager</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cards">
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/whole team/IPSITA.png">
+                    <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/ipsita-chhabra-330a43161/"
+                            target="_blank">
+
+                        <img class="linkedin-logo" src="assets/Icons/White linkedin.svg">
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name"> Ipsita Chhabra</h4>
+                    <p class="member-position">Business Development (Sales)</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cards">
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/whole team/Ayushi.png">
+                    <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/theayushigupta"
+                            target="_blank">
+
+                        <img class="linkedin-logo" src="assets/Icons/White linkedin.svg">
+
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name"> Ayushi Gupta</h4>
+                    <p class="member-position">Video Editor</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cards">
+            <div class="in-div">
+                <div class="dp-image">
+                    <img class="dp" src="assets/whole team/Rishabh.png">
+                    <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/rishabh-harish/"
+                            target="_blank">
+
+                        <img class="linkedin-logo" src="assets/Icons/White linkedin.svg">
+
+                    </a>
+                </div>
+
+                <div class="member-detail">
+                    <h4 class="member-name">Rishabh Harish</h4>
+                    <p class="member-position">Android Developer (Front-End)</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
 {%endblock%}
