@@ -1,4 +1,4 @@
-const
+const TeamDataSource = require('../../data-sources/teams-data');
 
 /**
  *
@@ -7,20 +7,12 @@ const
  */
 module.exports.serveIndexPage = function (req, res) {
 
-	FakeAPI.getAthletesList()
-		.then(result => {
-
-			res.render(
-				'index',
-				{
-					data: result
-				}
-			);
-
-		})
-		.catch(err => {
-			res.status(404).send(err);
-		});
+	res.render(
+		'index',
+		{
+			coreTeamMembers: TeamDataSource.getCoreTeamMembers()
+		}
+	);
 
 };
 

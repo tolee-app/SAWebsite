@@ -1,19 +1,14 @@
 <div class="cards">
     <div class="in-div">
         <div class="dp-image">
-            <img class="dp" src="assets/member1.jpg">
-            <a class="linkedin-link" href="https://www.linkedin.com/in/shankmishra/" target="_blank">
-
-                <img class="linkedin-logo" src="assets/LINKEDIN.png">
-
+            <img class="dp" src="{{member.profilePicUrl}}" alt="Profile Pic">
+            <a class="linkedin-link" href="{{member.linkedInProfileUrl}}" target="_blank">
+                <img class="linkedin-logo" src="assets/LINKEDIN.png" alt="LinkedIn Logo">
             </a>
         </div>
-
         <div class="member-detail">
-            <h4 class="member-name"> Shashank Mishra</h4>
-            <p class="member-position">Founder And CEO</p>
+            <h4 class="member-name">{{member.name}}</h4>
+            <p class="member-position">{{member.designation}}</p>
         </div>
-
     </div>
-
 </div>
