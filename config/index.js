@@ -13,5 +13,11 @@ module.exports = {
 	serverConf: {
 		host: String(environment['ENV_SA_WEB_HOST']),
 		port: Number(environment['ENV_SA_WEB_PORT']),
+	},
+	crowdfundApiConf: {
+		baseUrl: String(environment['ENV_CROWDFUND_API_URL']),
+	},
+	blogsApiConf: {
+		baseUrl: String(environment['ENV_BLOGS_API_URL']),
 	}
 };
