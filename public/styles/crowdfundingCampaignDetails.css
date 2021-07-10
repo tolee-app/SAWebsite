@@ -1,0 +1,433 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+.crowd-funding-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    opacity: 0.9;
+    margin: 0;
+}
+.main-crowd-funding-analytics{
+    padding: 168px 96px 80px;
+}
+.sub-division-crowdFunding{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 64px;
+}
+.sub-division-left{
+    position: relative;
+    width: 55%;
+}
+.sub-division-left video{
+    width: 100%;
+    height: auto;
+}
+.sub-division-right{
+    width: 45%;
+    padding-left: 48px;
+}
+.horizontal-line{
+    margin:0;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.label-contributed-till-now{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 20px 0px 0px;
+}
+.amount-contributed{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0.0015em;
+    color: #74A11E;
+    margin: 0;
+}
+.percentage-span{
+    margin-left: 8px;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.0015em;
+    color: rgba(0, 0, 0, 0.7);
+}
+.label-target-amount{
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    opacity: 0.9;
+    margin: 16px 0 20px;
+}
+.target-amount{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.0015em;
+    color: #005580;
+    opacity: 0.9;
+}
+
+.division-supporters{
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+}
+.label-supporters .label-days-left{
+    flex: 50%;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0.0015em;
+    color: rgba(0, 0, 0, 0.9);
+}
+.label-days-left{
+    margin-left: auto;
+}
+
+.number-supporters{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    opacity: 0.9;
+    margin-right: 8px;
+}
+.share-button{
+    width: 100%;
+    border: none;
+    background-color : #287DA8;
+    padding: 21px 0px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.share-button img{
+    margin-left: 12px;
+}
+.label-share-brings{
+    margin-top: 4px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.span-new-people{
+    font-size: 24px;
+    line-height: 29px;
+    color: #287da8;
+}
+.main-milap-banner{
+    background: #810900;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 44px;
+    margin: 0 40px;
+
+}
+.left-milap-banner{
+    flex: 50%;
+
+}
+.right-milap-banner{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label-lets-contribute{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+.label-click-to-contribute{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.milap-button{
+    width: 50%;
+    border: none;
+    background-color : #ffffff;
+    padding: 21px 0px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.milap-description{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+.label-most-supporters-contribution{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    text-align: center;
+    margin: 12px 0 0;
+}
+.span-money-most-supporters{
+    color: #287da8;
+}
+.division-message-sportsapp{
+    background: #F5F5F5;
+    border-radius: 4px;
+    margin: 32px 96px 0;
+    padding: 11px;
+}
+.label-sportsapp-message{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    color: #005580;
+    margin: 0;
+
+}
+.progress-base{
+    width: 100%;
+    background-color: #E1E1E1;
+    border-radius: 12px;
+    margin: 16px 0;
+}
+.progress-completed{
+    background-color: #74A11E;
+    border-radius: 12px;
+    margin: 16px 0;
+}
+.basic-athlete-details{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+}
+.main-athlete-details{
+    margin: 80px 96px 0;
+}
+.basic-athlete-details-left img{
+    height: 112px;
+    width: 112px;
+    border: 4px solid #EBEBEB;
+    border-radius: 8px;
+}
+.basic-athlete-details-right{
+    margin: 0 0 0 24px;
+}
+.athlete-name{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: justify;
+    letter-spacing: 0.0015em;
+    text-transform: uppercase;
+    color: #287DA8;
+    margin: 0;
+}
+.athlete-sport{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    border: 2px solid #D7D7D7;
+    border-radius: 2px;
+    width: max-content;
+    padding: 2px;
+    margin: 8px 0 0;
+}
+.dot-separator{
+    height: 8px;
+    width: 8px;
+    background-color: #287DA8;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.athlete-sport-category{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    margin: 8px 0 0;
+}
+.navigation-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 48px 0 0;
+}
+.navigation-list ul{
+    display: inline;
+}
+.navigation-inactive a{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.0015em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.7;
+    display: block;
+    text-align: center;
+    padding: 24px 56px;
+    text-decoration: none;
+    background: #FFFFFF;
+    box-shadow: 0 4px 0 #F5F5F5;
+}
+.navigation-active a{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 34px;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    text-transform: uppercase;
+    color: #287DA8;
+    background: #F9F9F9;
+    box-shadow: 0 4px 0 #287DA8;
+    padding: 24px 56px;
+    text-decoration: none;
+}
+.athlete-details-about-main{
+    margin: 48px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.athlete-details-about-left{
+    flex: 50%;
+    margin-right: 48px;
+}
+
+.athlete-details-about-right{
+    flex: 50%;
+
+}
+.details-text{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: justify;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    opacity: 0.9;
+}
+.details-heading{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 34px;
+    text-align: justify;
+    letter-spacing: 0.0015em;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.9);
+}
+.details-sub-heading{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.0015em;
+    color: rgba(0, 0, 0, 0.9);
+}
+.details-link{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.0015em;
+    text-decoration-line: underline;
+    color: #005580;
+}
+.athlete-details-social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+.social-media-icons{
+    height: 48px;
+    width: 48px;
+    margin: 0 24px 0 0;
+}
+.separator{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin: 80px 0 0;
+
+}
+
+.large-athlete-image{
+    width: 100%;
+    height: 264px;
+
+}
+.sub-division-athlete-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.small-images-athlete{
+    height: 138px;
+    width: 138px;
+    margin: 24px;
+}
+
+.selected{
+    border: 6px solid #3C91BC;
+}
+
+.selected .unselected{
+    cursor: pointer;
+}
+
+
+
