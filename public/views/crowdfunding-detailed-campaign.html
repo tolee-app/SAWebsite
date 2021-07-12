@@ -21,9 +21,13 @@
             <p class="crowd-funding-title">{{campaign.campaignTitle}}</p>
             <div class="sub-division-crowdFunding">
                 <div class="sub-division-left">
-                    <video autoplay loop controls>
-                        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
-                    </video>
+                    {%if campaign.campaignMedia.contentType == 'image' %}
+                        <img src="{{campaign.campaignMedia.contentCDN}}/{{campaign.campaignMedia.contentKey}}" alt="image" />
+                    {%elif campaign.campaignMedia.contentType == 'video' %}
+                        <video autoplay loop controls>
+                            <source src="{{campaign.campaignMedia.contentCDN}}/{{campaign.campaignMedia.contentKey}}" type="video/mp4" />
+                        </video>
+                    {%endif%}
                 </div>
                 <div class="sub-division-right">
                     <hr class="horizontal-line">
@@ -36,7 +40,7 @@
                     <hr class="horizontal-line">
                     <div class="division-supporters">
                         <p class="label-supporters"><span class="number-supporters">{{campaign.countSupporters}}+</span>supporters</p>
-                        <p class="label-days-left"><span class="number-supporters">{{calculateDaysLeftFromDate(campaign.endsAtTimestamp)}}</span>days left</p>
+                        <p class="label-days-left"><span class="number-supporters">{{calculateDaysLeftFromDate(campaign.endsAtTimestamp)}} </span>days left</p>
                     </div>
                     <button class="share-button">share within your circle<img src="assets/shareIcon.svg"></button>
                     <p class="label-share-brings">Every share brings around <span class="span-new-people">3 new people.</span></p>
@@ -51,11 +55,11 @@
                 <p class="label-click-to-contribute">Click here to Contribute</p>
             </div>
             <div class="right-milap-banner">
-                <button class="milap-button"><img src="assets/milaap.svg">*</button>
+                <button class="milap-button"><img src="assets/milaap.svg">**</button>
                 <p class="milap-description">**Milaap is a registered trademark of Milaap Social Ventures India Pvt. Ltd.</p>
             </div>
         </div>
-        <p class="label-most-supporters-contribution">*Most supporters contributed <span class="span-money-most-supporters">Rs.500</span> for the Athlete.</p>
+        <p class="label-most-supporters-contribution">*Most supporters contributed <span class="span-money-most-supporters">₹ {{campaign.avgContributionAmountINR}}</span> for the Athlete.</p>
         <div class="division-message-sportsapp">
             <p class="label-sportsapp-message">SportsApp will not charge any fee on your contribution to the athlete.</p>
         </div>
@@ -63,11 +67,13 @@
     <section>
         <div class="main-athlete-details">
             <div class="basic-athlete-details">
-                <div class="basic-athlete-details-left"><img src="assets/whole team/Amit.png"></div>
+                <div class="basic-athlete-details-left">
+                    <img alt="Profile Pic" src="{{campaign.athleteDetails.profilePic.contentCDN}}/{{campaign.athleteDetails.profilePic.contentKey}}" />
+                </div>
                 <div class="basic-athlete-details-right">
-                    <p class="athlete-name">Abhinav Kumar Bindra</p>
-                    <p class="athlete-sport">Mixed Martial Arts</p>
-                    <p class="athlete-sport-category">4x400m category<span class="dot-separator"></span>23 Yrs</p>
+                    <p class="athlete-name">{{campaign.athleteDetails.name}}</p>
+                    <p class="athlete-sport">{{campaign.athleteDetails.sport}}</p>
+                    <p class="athlete-sport-category">{{campaign.athleteDetails.role}}<span class="dot-separator"></span>{{calculateAgeFromDob(campaign.athleteDetails.dateOfBirth)}}</p>
                 </div>
             </div>
             <div class="main-navigation-bar">
@@ -79,46 +85,50 @@
             </div>
             <div class="athlete-details-about-main" id="athleteAbout">
                 <div class="athlete-details-about-left">
-                    <p class="details-text">When you are coming to India to visit, you might ask: does India have a national sport? Here it is: Field hockey is recognised as India’s national sport. It is administered by Hockey India. The Indian national hockey team won the 1975 Hockey World Cup and have, as of 2016, taken eight gold, one silver, and two bronze Olympics.</p>
-                    <br>
-                    <p class="details-text">When you are coming to India to visit, you might ask: does India have a national sport?</p>
-                    <br>
-                    <p class="details-heading">Profile Links</p>
-                    <br>
-                    <p class="details-sub-heading">World Archery Federation Profile : </p>
-                    <a class="details-link" href="https://worldarchery.sport/8734/deepika-kumari">https://worldarchery.sport/8734/deepika-kumari</a>
-                    <br>
-                    <p class="details-sub-heading">Social Media Profile : </p>
+                    {{campaign.athleteDetails.bioText}}
+                    <br/>
+                    <p class="details-sub-heading">Social Media Profile: </p>
                     <div class="athlete-details-social-media">
-                        <a href="https://google.com"><img class="social-media-icons" src="assets/Icons/Follow Us Icons/instagram.png"></a>
-                        <a href="https://google.com"><img class="social-media-icons" src="assets/Icons/Follow Us Icons/facebook.png"></a>
-                        <a href="https://google.com"><img class="social-media-icons" src="assets/Icons/Follow Us Icons/twitter.png"></a>
+                        {%for social in campaign.athleteDetails.socialProfiles%}
+                            {%if social.socialPlatform == 'facebook' %}
+                                {%set socialIcon = "assets/Icons/Social/fb.svg" %}
+                            {%elif social.socialPlatform == 'instagram' %}
+                                {%set socialIcon = "assets/Icons/Social/fb.svg" %}
+                            {%elif social.socialPlatform == 'twitter' %}
+                                {%set socialIcon = "assets/Icons/Social/fb.svg" %}
+                            {%elif social.socialPlatform == 'linkedin' %}
+                                {%set socialIcon = "assets/Icons/Social/fb.svg" %}
+                            {%else%}
+                                {%set socialIcon = "assets/Icons/Social/default.svg" %}
+                            {%endif%}
+                            <a href="{{social.profileUri}}"><img class="social-media-icons" src="{{socialIcon}}" alt="social icon"></a>
+                        {%endfor%}
                     </div>
                 </div>
                 <div class="athlete-details-about-right">
-                    <img class="large-athlete-image" src="assets/sponsor1.png" id="largeImage">
                     <div class="sub-division-athlete-images" id="collectionImages">
-                        <img class="small-images-athlete selected" id="img1" src="assets/sponsor1.png" onclick="imageClick(this.src, this.id)">
-                        <img class="small-images-athlete unselected" id="img2" src="assets/sponsor2.png" onclick="imageClick(this.src, this.id)">
-                        <img class="small-images-athlete unselected" id="img3" src="assets/sponsor3.png"onclick="imageClick(this.src, this.id)">
-                        <img class="small-images-athlete unselected" id="img4"src="assets/sponsor4.png" onclick="imageClick(this.src, this.id)">
-                        <img class="small-images-athlete unselected" id="img5" src="assets/sponsor5.png" onclick="imageClick(this.src, this.id)">
-                        <img class="small-images-athlete unselected" id="img6"src="assets/sponsor6.png" onclick="imageClick(this.src, this.id)">
+                    {% for image in campaign.athleteDetails.mediaGallery %}
+                        {% if loop.index == 1 %}
+                            {%set galleryImageClass = "small-images-athlete selected" %}
+                            <img class="large-athlete-image" src="{{image.contentCDN}}/{{image.contentKey}}" id="largeImage" alt="">
+                        {% else %}
+                            {%set galleryImageClass = "small-images-athlete unselected" %}
+                        {% endif %}
+                        <img class="{{galleryImageClass}}" id="img{{loop.index}}" src="{{image.contentCDN}}/{{image.contentKey}}" onclick="imageClick(this.src, this.id)" alt="image" />
+                    {% endfor %}
                     </div>
                 </div>
             </div>
-            <hr class="separator">
+            <hr class="separator" />
         </div>
     </section>
     <section>
         <div class="achievements-main" id="athleteAchievements">
-            <p class="details-title">Top Achievements 🥇</p>
+            <p class="details-title">Achievements 🥇</p>
             <div class="achievements">
-                {%include "athlete-achievement-card.html" %}
-                {%include "athlete-achievement-card.html" %}
-                {%include "athlete-achievement-card.html" %}
-                {%include "athlete-achievement-card.html" %}
-                {%include "athlete-achievement-card.html" %}
+                {% for achievement in campaign.athleteHighlights %}
+                {% include "athlete-achievement-card.html" %}
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -127,21 +137,7 @@
             <p class="details-title">How will this help him</p>
             <div class="athlete-details-about-main">
                 <div class="fund-use-left">
-                    <p class="details-text">When you are coming to India to visit, you might ask: does India have a national sport? Here it is: Field hockey is recognised as India’s national sport. It is administered by Hockey India. The Indian national hockey team won the 1975 Hockey World Cup and have, as of 2016, taken eight gold, one silver, and two bronze Olympics.</p>
-                    <br>
-                    <p class="details-text">When you are coming to India to visit, you might ask: does India have a national sport?</p>
-                    <br>
-                    <p class="details-heading">Profile Links</p>
-                    <br>
-                    <p class="details-sub-heading">World Archery Federation Profile : </p>
-                    <a class="details-link" href="https://worldarchery.sport/8734/deepika-kumari">https://worldarchery.sport/8734/deepika-kumari</a>
-                    <br>
-                    <p class="details-sub-heading">Social Media Profile : </p>
-                    <div class="athlete-details-social-media">
-                        <a href="https://google.com"><img class="social-media-icons" src="assets/Icons/Follow Us Icons/instagram.png"></a>
-                        <a href="https://google.com"><img class="social-media-icons" src="assets/Icons/Follow Us Icons/facebook.png"></a>
-                        <a href="https://google.com"><img class="social-media-icons" src="assets/Icons/Follow Us Icons/twitter.png"></a>
-                    </div>
+                    {{campaign.campaignObjectives}}
                 </div>
             </div>
         </div>

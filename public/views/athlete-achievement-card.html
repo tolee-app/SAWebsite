@@ -1,7 +1,9 @@
  <div class="achievement-card">
-    <p class="achievement-title">Gold medal at 2012 TOKYO Olympics games</p>
-    <p class="achievement-role">Badminton Singles </p>
-    <p class="achievement-timeline">23 March 2020 - 5 June 2020</p>
-    <img class="achievement-image"src="../assets/sample/img.png">
-    <hr class="achievement-horizontal-line">
+    <p class="achievement-title">{{achievement.title}}</p>
+    <p class="achievement-role">{{achievement.subtitle}}</p>
+    <p class="achievement-timeline">{{achievement.startTimestamp if achievement.startTimestamp else "N/A"}} - {{achievement.endTimestamp if achievement.endTimestamp else "N/A"}}</p>
+     {% if achievement.media %}
+        <img class="achievement-image" src="{{achievement.media.contentCDN}}/{{achievement.media.contentKey}}"  alt="achievement image" />
+     {%endif%}
+    <hr class="achievement-horizontal-line" />
  </div>

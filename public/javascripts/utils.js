@@ -11,3 +11,11 @@ function calculateDaysLeftFromDate(targetDate) {
 	targetDate = new Date(targetDate).getTime();
 	return (targetDate - currentDate) / (24*3600*1000);
 }
+
+function calculateAgeFromDob(dob) {
+	const currentDate = new Date();
+	const dateOfBirth = new Date(dob);
+
+	return (currentDate - dateOfBirth) / (365*24*3600*1000);
+
+}
