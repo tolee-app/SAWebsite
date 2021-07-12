@@ -1,5 +1,5 @@
 const CrowdfundAPI = require('../../data-sources/crowdfund-api');
-
+const Utils = require('./utils');
 
 module.exports.serveCrowdfundIndex = function (req, res) {
 
@@ -8,11 +8,16 @@ module.exports.serveCrowdfundIndex = function (req, res) {
 			res.render(
 				'crowdfunding-landing-page',
 				{
-					campaigns: campaigns
+					campaigns: campaigns,
+					calculateAgeFromDob: Utils.calculateAgeFromDob,
+					calculatePercentage: Utils.calculatePercentage,
+					calculatePercentageStr: Utils.calculatePercentageStr,
+					calculateDaysLeftFromDate: Utils.calculateDaysLeftFromDate,
 				}
 			);
 		})
 		.catch(err => {
+			console.error(err);
 			res.status(500).send('');
 		});
 
@@ -28,11 +33,16 @@ module.exports.serveDetailedCrowdfundCampaign = function (req, res) {
 			res.render(
 				'crowdfunding-detailed-campaign',
 				{
-					campaign: campaign
+					campaign: campaign,
+					calculateAgeFromDob: Utils.calculateAgeFromDob,
+					calculatePercentage: Utils.calculatePercentage,
+					calculatePercentageStr: Utils.calculatePercentageStr,
+					calculateDaysLeftFromDate: Utils.calculateDaysLeftFromDate,
 				}
 			);
 		})
 		.catch(err => {
+			console.error(err);
 			res.status(500).send('');
 		});
 

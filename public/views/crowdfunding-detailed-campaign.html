@@ -1,9 +1,9 @@
 {% extends "base.html"%}
-{% block css %}
-<link href="styles/crowdfundingCampaignDetails.css" rel="stylesheet">
-<link href="styles/achievementCard.css" rel="stylesheet">
-{%endblock%}
 {%block title%}SportsApp - Protsahan{%endblock%}
+{% block css %}
+<link href="/styles/crowdfundingCampaignDetails.css" rel="stylesheet">
+<link href="/styles/achievementCard.css" rel="stylesheet">
+{%endblock%}
 
 {%block navigationList%}
 <li class="nav-li">
@@ -42,7 +42,7 @@
                         <p class="label-supporters"><span class="number-supporters">{{campaign.countSupporters}}+</span>supporters</p>
                         <p class="label-days-left"><span class="number-supporters">{{calculateDaysLeftFromDate(campaign.endsAtTimestamp)}}</span>days left</p>
                     </div>
-                    <button class="share-button">share within your circle<img src="assets/shareIcon.svg"></button>
+                    <button class="share-button">share within your circle<img src="/assets/shareIcon.svg"></button>
                     <p class="label-share-brings">Every share brings around <span class="span-new-people">3 new people.</span></p>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 <p class="label-click-to-contribute">Click here to Contribute</p>
             </div>
             <div class="right-milap-banner">
-                <button class="milap-button"><img src="assets/milaap.svg">**</button>
+                <button class="milap-button"><img src="/assets/milaap.svg">**</button>
                 <p class="milap-description">**Milaap is a registered trademark of Milaap Social Ventures India Pvt. Ltd.</p>
             </div>
         </div>
@@ -91,15 +91,15 @@
                     <div class="athlete-details-social-media">
                         {%for social in campaign.athleteDetails.socialProfiles%}
                             {%if social.socialPlatform == 'facebook' %}
-                                {%set socialIcon = "assets/Icons/Social/fb.svg" %}
+                                {%set socialIcon = "/assets/Icons/Social/fb.svg" %}
                             {%elif social.socialPlatform == 'instagram' %}
-                                {%set socialIcon = "assets/Icons/Social/fb.svg" %}
+                                {%set socialIcon = "/assets/Icons/Social/fb.svg" %}
                             {%elif social.socialPlatform == 'twitter' %}
-                                {%set socialIcon = "assets/Icons/Social/fb.svg" %}
+                                {%set socialIcon = "/assets/Icons/Social/fb.svg" %}
                             {%elif social.socialPlatform == 'linkedin' %}
-                                {%set socialIcon = "assets/Icons/Social/fb.svg" %}
+                                {%set socialIcon = "/assets/Icons/Social/fb.svg" %}
                             {%else%}
-                                {%set socialIcon = "assets/Icons/Social/default.svg" %}
+                                {%set socialIcon = "/assets/Icons/Social/default.svg" %}
                             {%endif%}
                             <a href="{{social.profileUri}}"><img class="social-media-icons" src="{{socialIcon}}" alt="social icon"></a>
                         {%endfor%}

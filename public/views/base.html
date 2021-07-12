@@ -51,29 +51,31 @@
     <meta content="player, sports, app, sportsapp, sports app, games, sport, cricket, football, game, job, jobs, events, event, sponsorship, sponsorships, campaigns, campaign, athlete, athletes, sponsor, sponsors, network, social, basketball, stadium, academies, play"
           name="keywords"/>
 
-    <link href="assets/LOGO WITHOUT LABEL.svg" rel="icon" type="image/x-icon">
+    <link href="/assets/LOGO WITHOUT LABEL.svg" rel="icon" type="image/x-icon">
 
-    <link href="styles/index.css" rel="stylesheet" type="text/css"/>
+    <link href="/styles/index.css" rel="stylesheet" type="text/css"/>
 
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
 
     <!--Slick css and js-->
-    <link href="styles/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="/styles/slick.css" rel="stylesheet" type="text/css"/>
 
-    <link href="styles/slick-theme.css" rel="stylesheet" type="text/css"/>
-    <link href="styles/team.css" rel="stylesheet" type="text/css"/>
+    <link href="/styles/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="/styles/team.css" rel="stylesheet" type="text/css"/>
 
     <title>{%block title%} {%endblock%}</title>
     {%block css%} {%endblock%}
+    {% block scripts %}
+    {%endblock%}
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg ">
 
-    <a class="navbar-brand" href="#">
-        <img alt="" class="" src="assets/LogoSP.svg">
-        <img alt="" class="bars" src="assets/Bars SVG 1.svg">
+    <a class="navbar-brand" href="/">
+        <img alt="" class="" src="/assets/LogoSP.svg">
+        <img alt="" class="bars" src="/assets/Bars SVG 1.svg">
     </a>
 
     <button aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
@@ -111,7 +113,7 @@
 
 <footer id="footer">
     <div class="footer-div">
-        <img alt="" class="" src="assets/LogoSP.svg">
+        <img alt="" class="" src="/assets/LogoSP.svg">
         <p style="text-align: justify;"> 'SportsApp', is an aggregator platform which combines community, commerce
             and content for the sports
             ecosystem In India. Join today to become a part of the digital revolution in Indian Sports.</p>
@@ -120,19 +122,19 @@
         <p class="footer-div-heading">Follow Us</p>
         <div class="footer-icons">
             <a href="https://www.facebook.com/sportsapp.in/"><img
-                    src="assets/Icons/Follow Us Icons/facebook.png"></a>
+                    src="/assets/Icons/Follow Us Icons/facebook.png"></a>
             <a href="https://in.linkedin.com/company/sportsapp_in"><img
-                    src="assets/Icons/Follow Us Icons/linkedin.png"></a>
+                    src="/assets/Icons/Follow Us Icons/linkedin.png"></a>
             <a href="https://www.instagram.com/sportsapp.in/"><img
-                    src="assets/Icons/Follow Us Icons/instagram.png"></a>
-            <a href="https://twitter.com/SportsApp_in"><img src="assets/Icons/Follow Us Icons/twitter.png"></a>
+                    src="/assets/Icons/Follow Us Icons/instagram.png"></a>
+            <a href="https://twitter.com/SportsApp_in"><img src="/assets/Icons/Follow Us Icons/twitter.png"></a>
         </div>
         <div class="footer-googleplay">
-            <a href="https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp" target="_blank"><img src="assets/googleplay.png"/></a>
+            <a href="https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp" target="_blank"><img src="/assets/googleplay.png"/></a>
         </div>
         <!--<div class="footer-googleplay">
             <a href="https://bit.ly/Download_SportsApp_APKLink"><img
-                    src="assets/SmallerDownloadButton1.svg"/></a>
+                    src="/assets/SmallerDownloadButton1.svg"/></a>
         </div>-->
         <div class="madeinindia">
             <p>Made with ❤️ in India</p>
@@ -144,7 +146,7 @@
         <ul>
             <li>
                 <div class="contactus-icon">
-                    <img src="assets/Icons/Contact Us Icons/placeholder.png">
+                    <img src="/assets/Icons/Contact Us Icons/placeholder.png">
                 </div>
                 &nbsp;<a
                     href="https://www.google.com/maps/place/SportsApp/@28.6261945,77.3718748,18z/data=!4m8!1m2!2m1!1s818,+Tower+B,+ITHUM+IT+Park,+Sector+62,+Noida,+Uttar+Pradesh+201301!3m4!1s0x0:0x9a258e998a95e0f2!8m2!3d28.6264839!4d77.3726096"
@@ -153,20 +155,20 @@
             </li>
             <li>
                 <div class="contactus-icon">
-                    <img src="assets/Icons/Contact Us Icons/phone.png">
+                    <img src="/assets/Icons/Contact Us Icons/phone.png">
                 </div>
                 &nbsp;<a href="tel://9441800864">+91-944-180-0864</a>
             </li>
             <li>
                 <div class="contactus-icon">
-                    <img src="assets/Icons/Contact Us Icons/envelope.png">
+                    <img src="/assets/Icons/Contact Us Icons/envelope.png">
                 </div>
                 &nbsp;<a href="mailto:support@sportsapp.co.in">
                 support@sportsapp.co.in</a>
             </li>
             <li>
                 <div class="contactus-icon">
-                    <img src="assets/Icons/Contact Us Icons/linkedin (1).png">
+                    <img src="/assets/Icons/Contact Us Icons/linkedin (1).png">
                 </div>
                 &nbsp;<a href="https://in.linkedin.com/company/sportsapp_in">
                 SportsApp</a>
@@ -215,7 +217,5 @@
 
 <script src="scripts/slider.js"></script>
 <script src="scripts/index.js"></script>
-{% block scripts %}
-{%endblock%}
 </body>
 </html>
