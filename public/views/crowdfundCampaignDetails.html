@@ -1,6 +1,7 @@
 {% extends "base.html"%}
 {% block css %}
 <link href="/styles/crowdfundingCampaignDetails.css" rel="stylesheet">
+<link href="/styles/achievementCard.css" rel="stylesheet">
 {%endblock%}
 {%block title%}SportsApp-Crowd Funding{%endblock%}
 
@@ -21,7 +22,7 @@
                     <p class="label-contributed-till-now">Contribution till now</p>
                     <p class="amount-contributed">₹ 3,30,240 <span class="percentage-span">(61%)</span></p>
                     <div class="progress-base">
-                        <div class="progress-completed" style="width:25%">&nbsp;</div>
+                        <div class="progress-completed" style="width:61%">&nbsp;</div>
                     </div>
                     <p class="label-target-amount">Our Target Amount : <span class="target-amount">₹ 3,30,240</span></p>
                     <hr class="horizontal-line">
@@ -64,9 +65,8 @@
             <div class="main-navigation-bar">
                 <ul class="navigation-list" id="navList">
                     <li class="navigation-active page-scroll" id="athleteAboutListItem" onclick="navigationClick(this.id)"><a href="#athleteAbout">About</a></li>
-                    <li class="navigation-inactive page-scroll" id="athleteReasonListItem" onclick="navigationClick(this.id)"><a href="#">Reason</a></li>
-                    <li class="navigation-inactive page-scroll" id="athleteAchievementListItem" onclick="navigationClick(this.id)"><a href="#">Achievement</a></li>
-                    <li class="navigation-inactive page-scroll" id="athleteFundUseListItem" onclick="navigationClick(this.id)"><a href="#">Fund's Use</a></li>
+                    <li class="navigation-inactive page-scroll" id="athleteAchievementListItem" onclick="navigationClick(this.id)"><a href="#athleteAchievements">Achievement</a></li>
+                    <li class="navigation-inactive page-scroll" id="athleteFundUseListItem" onclick="navigationClick(this.id)"><a href="#fundUse">Fund's Use</a></li>
                 </ul>
             </div>
             <div class="athlete-details-about-main" id="athleteAbout">
@@ -102,6 +102,43 @@
             <hr class="separator">
         </div>
     </section>
+    <section>
+        <div class="achievements-main" id="athleteAchievements">
+            <p class="details-title">Top Achievements 🥇</p>
+            <div class="achievements">
+                {%include "achievementCard.html" %}
+                {%include "achievementCard.html" %}
+                {%include "achievementCard.html" %}
+                {%include "achievementCard.html" %}
+                {%include "achievementCard.html" %}
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="fund-use-main" id="fundUse">
+            <p class="details-title">How will this help him</p>
+            <div class="athlete-details-about-main">
+                <div class="fund-use-left">
+                    <p class="details-text">When you are coming to India to visit, you might ask: does India have a national sport? Here it is: Field hockey is recognised as India’s national sport. It is administered by Hockey India. The Indian national hockey team won the 1975 Hockey World Cup and have, as of 2016, taken eight gold, one silver, and two bronze Olympics.</p>
+                    <br>
+                    <p class="details-text">When you are coming to India to visit, you might ask: does India have a national sport?</p>
+                    <br>
+                    <p class="details-heading">Profile Links</p>
+                    <br>
+                    <p class="details-sub-heading">World Archery Federation Profile : </p>
+                    <a class="details-link" href="https://worldarchery.sport/8734/deepika-kumari">https://worldarchery.sport/8734/deepika-kumari</a>
+                    <br>
+                    <p class="details-sub-heading">Social Media Profile : </p>
+                    <div class="athlete-details-social-media">
+                        <a href="https://google.com"><img class="social-media-icons" src="assets/Icons/Follow Us Icons/instagram.png"></a>
+                        <a href="https://google.com"><img class="social-media-icons" src="assets/Icons/Follow Us Icons/facebook.png"></a>
+                        <a href="https://google.com"><img class="social-media-icons" src="assets/Icons/Follow Us Icons/twitter.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p class="company-tagline">#AbKhelegaIndia</p>
 </div>
 {%endblock%}
 
