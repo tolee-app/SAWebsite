@@ -6,7 +6,7 @@ module.exports.serveCrowdfundIndex = function (req, res) {
 	CrowdfundAPI.getAllCampaigns()
 		.then(campaigns => {
 			res.render(
-				'crowdfundCampaignDetails',
+				'crowdfunding-landing-page',
 				{
 					campaigns: campaigns
 				}
@@ -26,7 +26,7 @@ module.exports.serveDetailedCrowdfundCampaign = function (req, res) {
 	CrowdfundAPI.getDetailedCampaign(campaignId)
 		.then(campaign => {
 			res.render(
-				'crowdfundCampaignDetails',
+				'crowdfunding-detailed-campaign',
 				{
 					campaign: campaign
 				}

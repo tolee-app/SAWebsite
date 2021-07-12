@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{%block title %} SportsApp - Protsahan {%endblock%}
+
+{%block navigationList%}
+    <li class="nav-li">
+        <a href="/blogs">Blogs</a>
+    </li>
+    <li class="nav-li">
+        <a href="https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp">Download</a>
+    </li>
+{%endblock%}
+
+{%block css%}
+<link href="styles/athleteCrowdFundingCard.css" rel="stylesheet">
+<link href="styles/crowdfundingCampaignDetails.css" rel="stylesheet">
+{%endblock%}
+
+{%block body%}
+
+{%include "crowdfunding-campaign-card.html"%}
+
+{%endblock%}
