@@ -18,6 +18,12 @@
 
 {%block body%}
 
+{%for campaign in campaigns %}
 {%include "crowdfunding-campaign-card.html"%}
+{%endfor%}
 
+{%endblock%}
+
+{% block scripts %}
+<script src="javascripts/utils.js" type="text/javascript"></script>
 {%endblock%}
