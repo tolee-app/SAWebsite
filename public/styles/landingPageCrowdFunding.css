@@ -1,0 +1,218 @@
+.main-landing-page{
+    object-fit: cover;
+}
+.landing-crowd-funding-portsahan-intro{
+    margin: 0 40px;
+    padding-top: 104px;
+}
+.initiative-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 88px;
+    text-align: center;
+    color: #287DA8;
+    margin: 80px 0 0;
+}
+.initiative-tagline {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    color: #000000;
+    margin: 24px 0 0;
+}
+
+.span-initiative-tagline{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    color: #287DA8;
+}
+.initiative-description{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    opacity: 0.7;
+    margin: 72px 120px 0;
+}
+.initiative-logo{
+    margin: 196px 0 0;
+}
+.initiative-logo img{
+    width: 100%;
+}
+
+.division-vision-and-mission{
+    margin: 80px 128px 0 96px;
+}
+.vision-and-mission-heading{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.0015em;
+    text-transform: capitalize;
+    color: #287DA8;
+    margin: 0;
+}
+.vision-and-mission-description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    opacity: 0.9;
+    margin: 4px 0 0;
+}
+
+.initiative-objective{
+    width: 60%;
+    margin: 0 0 0 96px;
+}
+
+.division-athlete-campaigns{
+    margin: 0 96px 160px 96px;
+}
+.list-campaigns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: flex-start;
+}
+
+.horizontal-line-landing-page{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin: 80px 96px;
+}
+.landing-page-division-message-sportsapp{
+   margin: 80px 96px;
+}
+.description{
+    margin: 48px 0 0;
+}
+.description-athlete-campaigns{
+    margin: 24px 160px 0 0;
+}
+@media only screen and (max-width:512px) {
+    .landing-crowd-funding-portsahan-intro{
+        padding-top: 0;
+    }
+    .initiative-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 88px;
+        text-align: center;
+        color: #287DA8;
+    }
+    .initiative-tagline{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #000000;
+    }
+    .span-initiative-tagline{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #287DA8;
+    }
+    .initiative-description{
+        margin: 48px 0 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        opacity: 0.7;
+    }
+    .initiative-logo{
+        margin-top: 98px;
+    }
+    .division-vision-and-mission{
+        margin: 40px 16px 0;
+    }
+    .vision-and-mission-heading{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.0015em;
+        text-transform: capitalize;
+        color: #287DA8;
+    }
+
+    .horizontal-line-landing-page{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 40px 16px;
+    }
+    .initiative-objective{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 24px 16px 0;
+    }
+    .details-title{
+        width: 100%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.0015em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .details-text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.0015em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .description{
+        margin: 24px 16px 0 0;
+    }
+    .landing-page-division-message-sportsapp{
+        margin: 40px 16px 0;
+    }
+    .division-athlete-campaigns{
+        margin: 40px 16px 0;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .description-athlete-campaigns{
+        margin: 24px 16px 0 0;
+    }
+    .list-campaigns{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    .vision-and-mission-description{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        opacity: 0.9;
+    }
+}

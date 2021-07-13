@@ -1,8 +1,21 @@
 @font-face {
-    font-family: Roboto;
-    src: url('fonts/league-spartan/2.ttf') format('truetype');
+    font-family: "League Spartan";
+    src: url('fonts/league-spartan/LeagueSpartan-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family:"League Spartan";
+    src: url('fonts/league-spartan/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family:"League Spartan";
+    src: url('fonts/league-spartan/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: 600;
+}
+*{
+    font-family: "League Spartan";
+}
 #dots, #dots2, #dots3, #dots4  {
     display: none;
     color: #005580;

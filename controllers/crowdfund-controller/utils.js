@@ -19,7 +19,7 @@ function calculateAgeFromDob(dob) {
 	const currentDate = new Date();
 	const dateOfBirth = new Date(dob);
 
-	return Math.round((currentDate - dateOfBirth) / (365*24*3600*1000));
+	return Math.round((currentDate - dateOfBirth) / (365*24*3600*1000)) + ' yrs';
 
 }
 module.exports.calculateAgeFromDob = calculateAgeFromDob;

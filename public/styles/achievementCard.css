@@ -1,6 +1,17 @@
 @font-face {
-    font-family: Roboto;
-    src: url('fonts/league-spartan/2.ttf') format('truetype');
+    font-family: "League Spartan";
+    src: url('fonts/league-spartan/LeagueSpartan-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:"League Spartan";
+    src: url('fonts/league-spartan/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family:"League Spartan";
+    src: url('fonts/league-spartan/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: 600;
 }
 *{
     margin:0;
@@ -11,13 +22,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .achievement-card{
-    flex: 50%;
-    padding: 32px;
-    font-family: Roboto;
+    width: 45%;
+    font-family: "League Spartan";
     font-style: normal;
+    margin-top: 48px;
 }
 .achievement-title{
     font-weight: bold;
@@ -30,7 +42,7 @@
     margin: 0;
 }
 .achievement-role{
-    margin-top: 12px;
+    margin: 4px 0 0;
     font-weight: normal;
     font-size: 32px;
     line-height: 38px;
@@ -40,10 +52,10 @@
 .achievement-image{
     width: 100%;
     height: auto;
-    margin-top: 40px;
+    margin: 24px 0 0;
 }
 .achievement-timeline{
-    margin-top: 4px;
+    margin: 4px 0 0;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
@@ -58,5 +70,47 @@
 @media only screen and (max-width: 512px) {
     .achievement-card {
         flex: 100%;
+        margin-top: 24px;
+        margin-right: 16px;
+    }
+    .achievement-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.0015em;
+        text-transform: uppercase;
+        color: #000000;
+        opacity: 0.9;
+    }
+    .achievement-role{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        opacity: 0.9;
+        margin: 6px 0 0;
+    }
+    .achievement-timeline{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        opacity: 0.7;
+        margin: 2px 0 0;
+
+    }
+
+    .achievement-image{
+        margin: 20px 0 0;
+    }
+    .achievement-horizontal-line{
+        margin: 24px 0 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
     }
 }

@@ -2,9 +2,17 @@
     margin : 0;
     padding : 0;
     box-sizing: border-box;
+    font-family: "League Spartan";
+}
+.details-main img{
+    object-fit: cover;
+}
+.left-milap-banner a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
 .crowd-funding-title{
-    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
@@ -19,14 +27,17 @@
 .sub-division-crowdFunding{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 64px;
 }
 .sub-division-left{
-    position: relative;
     width: 55%;
 }
 .sub-division-left video{
+    width: 100%;
+    height: auto;
+}
+.sub-division-left img{
     width: 100%;
     height: auto;
 }
@@ -36,7 +47,7 @@
 }
 .horizontal-line{
     margin:0;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .label-contributed-till-now{
     font-style: normal;
@@ -63,7 +74,6 @@
 .label-target-amount{
     font-size: 24px;
     line-height: 29px;
-    text-align: justify;
     letter-spacing: 0.0015em;
     color: #000000;
     opacity: 0.9;
@@ -79,20 +89,24 @@
 }
 
 .division-supporters{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 24px;
 }
-.label-supporters .label-days-left{
-    flex: 50%;
+.label-supporters{
     font-size: 24px;
     line-height: 29px;
-    text-align: justify;
     letter-spacing: 0.0015em;
     color: rgba(0, 0, 0, 0.9);
 }
+
 .label-days-left{
-    margin-left: auto;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.0015em;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .number-supporters{
@@ -104,25 +118,33 @@
     opacity: 0.9;
     margin-right: 8px;
 }
-.share-button{
-    width: 100%;
-    border: none;
-    background-color : #287DA8;
-    padding: 21px 0px;
-    text-align: center;
+.share-division{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
+}
+.label-spread-the-word{
+    font-family: "League Spartan";
+    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.005em;
     text-transform: uppercase;
-    border-radius: 4px;
+    color: #000000;
+    margin: 0;
 }
-.share-button img{
-    margin-left: 12px;
+.share-on-facebook img{
+    height: 56px;
+    width: 56px ;
+}
+
+.share-on-whatsapp img{
+    height: 56px;
+    width: 56px ;
+}
+.share-on-facebook{
+    margin: 0 24px 0 16px;
 }
 .label-share-brings{
     margin-top: 4px;
@@ -141,16 +163,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
     padding: 44px;
     margin: 0 40px;
 
 }
 .left-milap-banner{
-    flex: 50%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .right-milap-banner{
-    flex: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,14 +197,16 @@
     text-transform: capitalize;
     color: #FFFFFF;
 }
-.milap-button{
-    width: 50%;
-    border: none;
-    background-color : #ffffff;
-    padding: 21px 0px;
-    text-align: center;
-    justify-content: center;
+.right-milap-banner a{
     text-decoration: none;
+    color: black;
+}
+.milap-button{
+    width: 75%;
+    height: 80px;
+    background-color : #ffffff;
+    padding: 12px 0px;
+    text-align: center;
     cursor: pointer;
     color: black;
     font-weight: bold;
@@ -190,6 +215,9 @@
     letter-spacing: 0.005em;
     text-transform: uppercase;
     border-radius: 8px;
+}
+.milap-button img{
+    height: 100%;
 }
 
 .milap-description{
@@ -218,17 +246,28 @@
     background: #F5F5F5;
     border-radius: 4px;
     margin: 32px 96px 0;
-    padding: 11px;
+    padding: 24px;
 }
 .label-sportsapp-message{
-    font-weight: 600;
-    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
     line-height: 34px;
     text-align: center;
     letter-spacing: 0.0015em;
     color: #005580;
     margin: 0;
-
+}
+.label-sub-message{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    color: #000000;
+    opacity: 0.8;
+    margin: 8px 0 0;
 }
 .progress-base{
     width: 100%;
@@ -250,7 +289,7 @@
     align-items: center;
 }
 .main-athlete-details{
-    margin: 80px 96px 0;
+    margin: 72px 96px 0;
 }
 .basic-athlete-details-left img{
     height: 112px;
@@ -282,7 +321,7 @@
     border: 2px solid #D7D7D7;
     border-radius: 2px;
     width: max-content;
-    padding: 2px;
+    padding: 4px 8px;
     margin: 8px 0 0;
 }
 .dot-separator{
@@ -357,6 +396,7 @@
 
 }
 .details-text{
+    margin: 0;
     font-weight: normal;
     font-size: 24px;
     line-height: 140%;
@@ -366,6 +406,7 @@
     opacity: 0.9;
 }
 .details-heading{
+    margin: 0;
     font-weight: bold;
     font-size: 32px;
     line-height: 34px;
@@ -375,6 +416,7 @@
     color: rgba(0, 0, 0, 0.9);
 }
 .details-sub-heading{
+    margin: 0;
     font-weight: bold;
     font-size: 24px;
     line-height: 34px;
@@ -382,6 +424,7 @@
     color: rgba(0, 0, 0, 0.9);
 }
 .details-link{
+    margin: 0;
     font-weight: normal;
     font-size: 24px;
     line-height: 34px;
@@ -418,9 +461,9 @@
     justify-content: space-evenly;
 }
 .small-images-athlete{
-    height: 138px;
-    width: 138px;
-    margin: 24px;
+    height: 112px;
+    width: 112px;
+    margin-top: 24px;
 }
 
 .selected{
@@ -445,9 +488,8 @@
 
 }
 .achievements-main{
-    margin-top: 80px;
-    margin-left: 96px;
-    margin-right: 96px;
+    margin: 80px 96px 0;
+
 }
 
 .fund-use-main{
@@ -460,13 +502,391 @@
 }
 
 .company-tagline{
-    margin: 112px 96px 94px;
+    margin: 96px 0 24px 96px;
     font-style: normal;
     font-weight: bold;
-    font-size: 116px;
-    line-height: 139px;
+    font-size: 56px;
     text-align: justify;
     letter-spacing: 0.0015em;
     color: rgba(0, 0, 0, 0.15);
+}
 
+.label-social-media-profiles{
+    margin: 64px 0 0;
+}
+.social-media-sub-heading{
+    margin: 8px 0 0;
+}
+@media only screen and (max-width:512px) {
+    .division-message-sportsapp{
+        margin: 40px 16px 0;
+    }
+
+    .main-crowd-funding-analytics{
+        padding: 32px 16px 0px;
+    }
+    .sub-division-crowdFunding{
+        flex-direction: column;
+        margin-top: 24px;
+    }
+    .crowd-funding-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        opacity: 0.9;
+    }
+    .sub-division-left{
+        width: 100%;
+    }
+    .sub-division-right{
+        width: 100%;
+        padding: 0;
+    }
+    .horizontal-line{
+        margin: 24px 0 0;
+    }
+    .label-contributed-till-now{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        opacity: 0.9;
+        margin-top: 16px;
+    }
+    .amount-contributed{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        color: #74A11E;
+    }
+    .percentage-span{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        color: rgba(0, 0, 0, 0.7);
+        margin-left: 4px;
+    }
+    .progress-base{
+        height: 8px;
+        margin: 16px 0 8px;
+    }
+    .progress-completed{
+        height: 8px;
+    }
+    .label-target-amount{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        opacity: 0.9;
+    }
+    .target-amount{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        color: #005580;
+        opacity: 0.9;
+
+    }
+    .division-supporters{
+        margin: 16px 0 0;
+    }
+    .label-supporters{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.0015em;
+        color: rgba(0, 0, 0, 0.9);
+        margin: 0;
+    }
+    .number-supporters{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        opacity: 0.9;
+        margin: 0;
+    }
+    .label-days-left{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.0015em;
+        color: rgba(0, 0, 0, 0.9);
+        margin: 0;
+    }
+    .share-division{
+        margin-top: 20px;
+    }
+    .label-spread-the-word{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.005em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .share-on-facebook img{
+        height: 32px;
+        width: 32px;
+    }
+    .share-on-whatsapp img{
+        height: 32px;
+        width: 32px;
+    }
+    .label-share-brings{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+    .span-new-people{
+        font-family: League Spartan;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #287DA8;
+    }
+    .main-milap-banner{
+        border-radius: 0;
+        margin: 39px 0 0;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .left-milap-banner{
+
+    }
+    .label-lets-contribute{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.005em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .label-click-to-contribute{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.005em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .right-milap-banner{
+        margin-top: 24px;
+    }
+    .milap-button{
+        width: 100%;
+        height: 56px;
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 6px 0;
+    }
+    .milap-description{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: center;
+        letter-spacing: 0.005em;
+        color: #FFFFFF;
+        margin: 4px 0 0;
+    }
+
+    .label-most-supporters-contribution{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        margin: 8px 0 0;
+    }
+    .main-athlete-details{
+        margin: 48px 16px 0;
+    }
+    .basic-athlete-details-left img{
+        height: 80px;
+        width: 80px;
+    }
+    .basic-athlete-details-right{
+        margin: 0 0 0 12px;
+    }
+
+    .athlete-name{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.0015em;
+        text-transform: uppercase;
+        color: #287DA8;
+    }
+    .athlete-sport{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        margin: 4px 0 0;
+        padding: 2px 8px;
+    }
+    .athlete-sport-category{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        color: #000000;
+    }
+    .dot-separator{
+        margin: 0 6px;
+        height: 4px;
+        width: 4px;
+    }
+
+
+    .navigation-inactive a{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.0015em;
+        text-transform: uppercase;
+        color: #303030;
+        opacity: 0.7;
+        padding: 16px 18px;
+
+    }
+    .navigation-active a{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.0015em;
+        text-transform: uppercase;
+        color: #287DA8;
+        padding: 16px 18px;
+    }
+
+    .athlete-details-about-main{
+        flex-direction: column;
+        align-items: center;
+        margin: 24px 16px 0 0;
+    }
+    .athlete-details-about-left{
+        margin: 0;
+    }
+    .details-text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.0015em;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .label-social-media-profiles{
+        margin: 32px 0 0;
+    }
+    .details-heading{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.0015em;
+        text-transform: capitalize;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .details-sub-heading{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.0015em;
+        color: rgba(0, 0, 0, 0.9);
+
+    }
+    .social-media-sub-heading{
+        margin: 12px 0 0;
+    }
+    .social-media-icons{
+        height: 24px;
+        width: 24px;
+        margin: 4px 12px 0 0;
+    }
+
+    .athlete-details-about-right{
+        margin: 32px 0 0;
+    }
+
+    .separator{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 40px 0 0;
+    }
+    .details-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        color: rgba(0, 0, 0, 0.9);
+
+    }
+    .achievements-main{
+        margin: 40px 16px 0;
+    }
+    .fund-use-main{
+        margin: 40px 16px 0;
+    }
+    .fund-use-left{
+        width: 100%;
+    }
+}
+.company-tagline{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.0015em;
+    color: rgba(0, 0, 0, 0.15);
+    margin: 96px 0 16px 16px;
 }

@@ -3,9 +3,9 @@
 {%block title %} SportsApp - Protsahan {%endblock%}
 
 {%block navigationList%}
-    <li class="nav-li">
-        <a href="/blogs">Blogs</a>
-    </li>
+<!--    <li class="nav-li">-->
+<!--        <a href="/blogs">Blogs</a>-->
+<!--    </li>-->
     <li class="nav-li">
         <a href="https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp">Download</a>
     </li>
@@ -14,12 +14,54 @@
 {%block css%}
 <link href="/styles/athleteCrowdFundingCard.css" rel="stylesheet">
 <link href="/styles/crowdfundingCampaignDetails.css" rel="stylesheet">
+<link href="/styles/landingPageCrowdFunding.css" rel="stylesheet">
 {%endblock%}
 
 {%block body%}
+<div class="main-landing-page">
+    <section>
+        <div class="landing-crowd-funding-main">
+               <div class="landing-crowd-funding-portsahan-intro">
+                   <p class="initiative-title">‘Protsahan’</p>
+                   <p class="initiative-tagline">Money can’t buy Medals, Let our athletes earn them.</p>
+                   <p class="span-initiative-tagline">Help them on the way!</p>
+                   <p class="initiative-description">SportsApp urges your support in our crowdfunding initiative so that our sporting heroes
+                       carry on the dignity they serve our nation with. Help them realize their dreams without
+                       any tensions, any worries. Together we can promote sports and brilliance in the country.
+                       A small contribution from your end can work wonders for the sports fraternity of our country</p>
+               </div>
+               <div class="initiative-logo">
+                   <img src="/assets/Icons/portsahan_logo.svg" alt="Protsahan Logo">
+               </div>
+        </div>
+    </section>
+    <section>
+        <div class="division-vision-and-mission">
+            <p class="vision-and-mission-heading">Mission</p>
+            <p class="vision-and-mission-description">To support athletes going to big sporting events like Olympics, Paralympics, Commonwealth Games, Asian Games etc.</p>
+            <p class="vision-and-mission-heading" style="margin-top: 40px;">Vision</p>
+            <p class="vision-and-mission-description">To build a nurturing ecosystem for athletes, where financial constraints hindering their progress, are nullified.</p>
+        </div>
+    </section>
+    <hr  class="horizontal-line-landing-page">
+    <div class="initiative-objective">
+        <p class="details-title">Why we are doing this</p>
+        <p class="details-text description">In India, there remains a huge asymmetry in the way athletes are treated across various sports. Through this initiative of ours, we would like to inculcate equality for all the athletes, while providing a platform for true sports lovers to show their support and contribution towards them.</p>
+    </div>
 
-{%for campaign in campaigns %}
-{%include "crowdfunding-campaign-card.html"%}
-{%endfor%}
+    <div class="division-message-sportsapp landing-page-division-message-sportsapp">
+        <p class="label-sportsapp-message">We will ensure that your support reaches athletes</p>
+        <p class="label-sub-message">SportsApp will charge 10% on the amount raised upto ₹ 5,00,000 and 5% on above ₹ 5,00,000</p>
+    </div>
+    <div class="division-athlete-campaigns">
+        <p class="details-title">Our Athletes</p>
+        <p class="details-text description-athlete-campaigns">These worthy flag bearers of Indian sports, work hard to make us proud. They have won several accolades for the country at various tournaments and competitions, to bring glory to our great nation. </p>
+        <div class="list-campaigns">
+            {%for campaign in campaigns %}
+            {%include "crowdfunding-campaign-card.html"%}
+            {%endfor%}
+        </div>
+    </div>
 
+</div>
 {%endblock%}
