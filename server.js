@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const Config = require('../config');
-const app = require('../app');
+const Config = require('./config');
+const app = require('./app');
 const debug = require('debug')(Config.projectConf.projectId);
 const http = require('http');
 

@@ -15,4 +15,4 @@ COPY --chown=node:node . .
 # switch user to 'node' from 'root'
 USER node
 # start application
-CMD ["dumb-init", "node", "bin/www"]
+CMD ["dumb-init", "node", "server.js"]
