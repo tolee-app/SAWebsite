@@ -38,6 +38,7 @@ module.exports.serveDetailedCrowdfundCampaign = function (req, res) {
 					calculatePercentage: Utils.calculatePercentage,
 					calculatePercentageStr: Utils.calculatePercentageStr,
 					calculateDaysLeftFromDate: Utils.calculateDaysLeftFromDate,
+					convertTimestampToDate: Utils.convertTimestampToDate,
 				}
 			);
 		})

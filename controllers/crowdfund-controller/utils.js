@@ -23,3 +23,11 @@ function calculateAgeFromDob(dob) {
 
 }
 module.exports.calculateAgeFromDob = calculateAgeFromDob;
+
+function convertTimestampToDate(timestamp) {
+
+	const d = new Date(timestamp);
+	return d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+
+}
+module.exports.convertTimestampToDate = convertTimestampToDate;

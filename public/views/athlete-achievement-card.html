@@ -1,7 +1,7 @@
  <div class="achievement-card">
     <p class="achievement-title">{{achievement.title}}</p>
     <p class="achievement-role">{{achievement.subtitle}}</p>
-    <p class="achievement-timeline">{{achievement.startTimestamp if achievement.startTimestamp else "N/A"}} - {{achievement.endTimestamp if achievement.endTimestamp else "N/A"}}</p>
+    <p class="achievement-timeline">{{convertTimestampToDate(achievement.startTimestamp) if achievement.startTimestamp else "N/A"}} - {{convertTimestampToDate(achievement.endTimestamp) if achievement.endTimestamp else "N/A"}}</p>
      {% if achievement.media %}
         <img class="achievement-image" src="{{achievement.media.contentCDN}}/{{achievement.media.contentKey}}"  alt="achievement image" />
      {%endif%}

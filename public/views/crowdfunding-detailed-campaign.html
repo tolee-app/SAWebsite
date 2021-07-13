@@ -47,8 +47,8 @@
                     </div>
                     <div class="share-division">
                         <p class="label-spread-the-word">spread the word :</p>
-                        <a class="share-on-facebook" href="google.com" target="_blank"><img src="/assets/Icons/Social/facebook.svg"></a>
-                        <a class="share-on-whatsapp" href={{"https://wa.me/?text=SportsApp%20Is%20here"}} target="_blank"><img src="/assets/Icons/Social/whatsapp.svg"></a>
+                        <a class="share-on-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{campaign.contributionUrl | safe}}" target="_blank"><img src="/assets/Icons/Social/facebook.svg" alt="facebook icon"></a>
+                        <a class="share-on-whatsapp" href="https://wa.me/?text={{campaign.contributionUrl | safe}}" target="_blank"><img src="/assets/Icons/Social/whatsapp.svg" alt="whatsapp icon"></a>
                     </div>
                     <p class="label-share-brings">Every share counts <span class="span-new-people">3 new people.</span></p>
                 </div>
@@ -59,7 +59,7 @@
         <div class="main-milap-banner">
             <div class="left-milap-banner">
                 <p class="label-lets-contribute">let’s contribute</p>
-                <a href="{{campaign.contributionUrl}}" class="label-click-to-contribute">Click here to Support</a>
+                <a href="{{campaign.contributionUrl}}" target="_blank" class="label-click-to-contribute">Click here to Support</a>
             </div>
             <div class="right-milap-banner">
                 <a class="milap-button" href="{{campaign.contributionUrl}}" target="_blank"><img src="/assets/milaap.svg">**</a>
@@ -93,7 +93,7 @@
             </div>
             <div class="athlete-details-about-main" id="athleteAbout">
                 <div class="athlete-details-about-left">
-                    {{campaign.athleteDetails.bioText}}
+                    {{campaign.athleteDetails.bioText | urlize | safe}}
                     <br/>
                     <p class="details-sub-heading label-social-media-profiles" >Social Media Profile: </p>
                     <div class="athlete-details-social-media">
