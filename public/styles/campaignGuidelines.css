@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:"Roboto";
+    src: url('fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family:"Roboto";
+    src: url('fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+*{
+    font-family: "Roboto";
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width:0px) {
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-header {
+    }
+    .main-header img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .main-campaign-details{
+        margin-top: 24px;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .div-campaign-detail-item{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .details-left img{
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+
+    .campaign-details-heading{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        text-transform: capitalize;
+        color: #000000;
+    }
+    .campaign-details-sub-heading, .campaign-details-link{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        color: #000000;
+        opacity: 0.8;
+        margin-top: 2px;
+    }
+
+    .campaign-details-horizontal-line{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .campaign-details-sub-heading-flex{
+        display: flex;
+        flex-direction: row;
+        margin-top: 12px;
+    }
+    .campaign-details-sub-heading-flex-left img{
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+
+    .campaign-details-link{
+        font-weight: bold;
+        color: black;
+        opacity: 100%;
+    }
+    .campaign-details-link a{
+        text-decoration: underline;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        color: #287da8;
+        margin-top: 2px;
+    }
+
+    .campaign-details-horizontal-line-separation{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .campaign-details-tabs{
+
+    }
+    .campaign-details-tabs-header-div{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .campaign-details-tabs-header-div-right img{
+        height: 20px;
+        width: 20px;
+        margin-left: 8px;
+    }
+
+    .campaign-details-tabs-header{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: justify;
+        letter-spacing: 0.0015em;
+        text-transform: capitalize;
+        color: #000000;
+    }
+
+
+    .tab {
+        margin-top: 16px;
+    }
+
+    .tab button {
+        width: 50%;
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        box-shadow: inset 0px -2px 0px #F5F5F5;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.0015em;
+        text-transform: uppercase;
+
+        color: #303030;
+
+        opacity: 0.7;
+    }
+
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    .tab button.active {
+        background-color: #F9F9F9;
+        box-shadow: inset 0px -2px 0px #287DA8;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.0015em;
+        text-transform: uppercase;
+        opacity: 1;
+        color: #287DA8;
+
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        border-top: none;
+        margin-bottom: 128px;
+    }
+
+    .tabcontent {
+        animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    }
+
+    /* Go from zero to full opacity */
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    #benefits, #t-c{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+}
