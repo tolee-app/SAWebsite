@@ -1,3 +1,5 @@
+# connect to source repo
+LABEL org.opencontainers.image.source="https://github.com/SportsAppIN/SAWebsite"
 # base image is nodejs based on alpine
 FROM node:lts-alpine3.13
 # install dumb-init system to prevent starting nodejs as process id 1
