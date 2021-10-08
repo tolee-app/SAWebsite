@@ -7,7 +7,7 @@ module.exports = {
 	projectConf: {
 		projectId: 'sa-website',
 		projectName: 'SportsApp Website',
-		projectVersion: '2021.07.01',
+		projectVersion: '2021.10.1',
 		projectVersionCode: 1,
 	},
 	serverConf: {

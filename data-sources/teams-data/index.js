@@ -27,7 +27,7 @@ const coreTeamMembers = [
 	},
 	{
 		name: 'Himanshu Nain',
-		profilePicUrl: '/assets/Himanshu.png',
+		profilePicUrl: '/assets/Himanshu.jpeg',
 		designation: 'Head of Technology',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/himanshu-nain/',
 	},
