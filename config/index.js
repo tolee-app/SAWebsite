@@ -7,8 +7,8 @@ module.exports = {
 	projectConf: {
 		projectId: 'sa-website',
 		projectName: 'SportsApp Website',
-		projectVersion: '2021.10.1',
-		projectVersionCode: 1,
+		projectVersion: '2021.12.1',
+		projectVersionCode: 2,
 	},
 	serverConf: {
 		host: String(environment['ENV_SA_WEB_HOST']),
