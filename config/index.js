@@ -1,3 +1,4 @@
+'use strict';
 const environment = process.env;
 
 const nodeEnv = environment['NODE_ENV'] || 'development';
@@ -7,12 +8,11 @@ module.exports = {
 	projectConf: {
 		projectId: 'sa-website',
 		projectName: 'SportsApp Website',
-		projectVersion: '2021.12.1',
-		projectVersionCode: 2,
+		projectVersion: '2022.1.1',
+		projectVersionCode: 3,
 	},
 	serverConf: {
-		host: String(environment['ENV_SA_WEB_HOST']),
-		port: Number(environment['ENV_SA_WEB_PORT']),
+		port: 8000,
 	},
 	crowdfundApiConf: {
 		baseUrl: String(environment['ENV_CROWDFUND_API_URL']),
