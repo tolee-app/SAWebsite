@@ -19,7 +19,11 @@ nunjucks.configure(
 	}
 );
 
-app.use(helmet());
+app.use(helmet({
+	contentSecurityPolicy: false,
+	crossOriginResourcePolicy: false,
+	crossOriginEmbedderPolicy: false
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
