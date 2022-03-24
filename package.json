@@ -1,6 +1,6 @@
 {
   "name": "sportsappwebsite",
-  "version": "2022.1.1",
+  "version": "2022.3.1",
   "private": true,
   "scripts": {
     "start": "node server.js",
@@ -10,9 +10,9 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "morgan": "~1.9.1",
     "node-fetch": "^2.6.1",
-    "nunjucks": "^3.2.3"
+    "nunjucks": "^3.2.3",
+    "helmet": "^5.0.2"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.5.11",

@@ -28,13 +28,13 @@ const coreTeamMembers = [
 	{
 		name: 'Himanshu Nain',
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/core-himanshu.jpeg',
-		designation: 'Head of Technology',
+		designation: 'Head of Engineering',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/himanshu-nain/',
 	},
 	{
 		name: 'Prashant Chandra',
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/core-prashant.jpg',
-		designation: 'Head of Sales',
+		designation: 'Head of Revenue',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/prashant-chandra-096174147/',
 	},
 	{
@@ -42,13 +42,7 @@ const coreTeamMembers = [
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/core-deepak.jpg',
 		designation: 'Head of Design',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/deepak-kadian-809412175',
-	},
-	{
-		name: 'Amit Nair',
-		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/marketing-amit.png',
-		designation: 'Senior Marketing Manager',
-		linkedInProfileUrl: 'https://www.linkedin.com/in/MAmitNair',
-	},
+	}
 ];
 
 
@@ -65,21 +59,39 @@ const allTeamMembers = [
 		linkedInProfileUrl: 'https://www.linkedin.com/in/vikas-dhale/',
 	},
 	{
+		name: 'Raveena Rajput',
+		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/hr-raveena.jpg',
+		designation: 'HR Associate',
+		linkedInProfileUrl: 'https://www.linkedin.com/in/raveena-rajput-8489861a1/',
+	},
+	{
 		name: 'Rishabh Harish',
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/tech-rishabh.png',
-		designation: 'SDE (Android)',
+		designation: 'Software Engineer (Android)',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/rishabh-harish/',
 	},
 	{
 		name: 'Ipsita Chhabra',
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/sales-ipsita.png',
-		designation: 'Business Development (Sales)',
+		designation: 'Sr. Sales Associate',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/ipsita-chhabra-330a43161/',
+	},
+	{
+		name: 'Anshula Srivastava',
+		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/finance-anshula.png',
+		designation: 'Manager - Finance & Costing',
+		linkedInProfileUrl: 'https://www.linkedin.com/in/anshula-srivastava-b40841193/',
+	},
+	{
+		name: 'Rupkatha Chatterjee',
+		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/marketing-rupkatha.png',
+		designation: 'Marketing Manager',
+		linkedInProfileUrl: 'https://www.linkedin.com/in/rupkatha-chatterjee-54b1aa140/',
 	},
 	{
 		name: 'Harshit Bansal',
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/ops-harshit.png',
-		designation: 'Associate Operations Manager',
+		designation: 'Operations Manager',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/harshit-bansal-026652156/',
 	},
 	{
@@ -89,22 +101,28 @@ const allTeamMembers = [
 		linkedInProfileUrl: 'https://www.linkedin.com/in/saransh-goswami-17043b106/',
 	},
 	{
-		name: 'Mansi Rawat',
-		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/ops-mansi.jpg',
-		designation: 'Operations Associate',
-		linkedInProfileUrl: 'https://www.linkedin.com/in/mansi-rawat-8a66b5145/',
-	},
-	{
 		name: 'Praveen Minj',
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/ops-praveen.jpg',
-		designation: 'Operations Intern',
-		linkedInProfileUrl: 'https://www.linkedin.com/in/praveen-minj-b78900131/\n',
+		designation: 'Operation Associate - Support and Verification',
+		linkedInProfileUrl: 'https://www.linkedin.com/in/praveen-minj-b78900131/',
+	},
+	{
+		name: 'Arjun Arora',
+		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/ops-arjun.jpg',
+		designation: 'Operation Associate - Content',
+		linkedInProfileUrl: 'https://www.linkedin.com/in/arjun-arora-949474163',
 	},
 	{
 		name: 'Md. Mozib',
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/design-mozib.png',
-		designation: 'Graphic Designer',
+		designation: 'Sr. Graphic Designer',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/md-mozib-783165162/',
+	},
+	{
+		name: 'Sipra Das',
+		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/design-sipra.png',
+		designation: 'UX/UI Designer',
+		linkedInProfileUrl: 'https://www.linkedin.com/in/sipra-das-8a5478199/',
 	},
 	{
 		name: 'Drishti Mago',
@@ -118,6 +136,7 @@ const allTeamMembers = [
 		designation: 'Motion Graphics & Video Editor Intern',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/alamjot-singh-228953179/',
 	},
+
 ];
 
 /**

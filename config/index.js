@@ -8,8 +8,8 @@ module.exports = {
 	projectConf: {
 		projectId: 'sa-website',
 		projectName: 'SportsApp Website',
-		projectVersion: '2022.1.1',
-		projectVersionCode: 3,
+		projectVersion: '2022.3.1',
+		projectVersionCode: 4,
 	},
 	serverConf: {
 		port: 8000,

@@ -1,7 +1,9 @@
+'use strict';
+
+const helmet = require('helmet');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const logger = require('morgan');
 const nunjucks = require('nunjucks');
 
 const app = express();
@@ -17,7 +19,7 @@ nunjucks.configure(
 	}
 );
 
-app.use(logger('dev'));
+app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
