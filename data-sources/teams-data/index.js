@@ -78,13 +78,13 @@ const allTeamMembers = [
 	},
 	{
 		name: 'Anshula Srivastava',
-		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/finance-anshula.png',
+		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/finance-anshula.jpg',
 		designation: 'Manager - Finance & Costing',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/anshula-srivastava-b40841193/',
 	},
 	{
 		name: 'Rupkatha Chatterjee',
-		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/marketing-rupkatha.png',
+		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/marketing-rupkatha.jpg',
 		designation: 'Marketing Manager',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/rupkatha-chatterjee-54b1aa140/',
 	},
@@ -120,7 +120,7 @@ const allTeamMembers = [
 	},
 	{
 		name: 'Sipra Das',
-		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/design-sipra.png',
+		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/design-sipra.jpg',
 		designation: 'UX/UI Designer',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/sipra-das-8a5478199/',
 	},
