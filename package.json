@@ -1,6 +1,6 @@
 {
   "name": "sportsappwebsite",
-  "version": "2022.4.1",
+  "version": "2022.8.1",
   "private": true,
   "scripts": {
     "start": "node server.js",

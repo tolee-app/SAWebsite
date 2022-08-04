@@ -20,22 +20,10 @@ const coreTeamMembers = [
 		linkedInProfileUrl: 'https://www.linkedin.com/in/shankmishra/',
 	},
 	{
-		name: 'Mohit Yadav',
-		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/core-mohit.png',
-		designation: 'Head of Operations',
-		linkedInProfileUrl: 'https://www.linkedin.com/in/mohit-yadav-17b550115/',
-	},
-	{
 		name: 'Himanshu Nain',
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/core-himanshu.jpeg',
 		designation: 'Head of Engineering',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/himanshu-nain/',
-	},
-	{
-		name: 'Prashant Chandra',
-		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/core-prashant.jpg',
-		designation: 'Head of Revenue',
-		linkedInProfileUrl: 'https://www.linkedin.com/in/prashant-chandra-096174147/',
 	},
 	{
 		name: 'Deepak Kadian',
@@ -125,18 +113,11 @@ const allTeamMembers = [
 		linkedInProfileUrl: 'https://www.linkedin.com/in/sipra-das-8a5478199/',
 	},
 	{
-		name: 'Drishti Mago',
-		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/design-drishti.jpg',
-		designation: 'Motion Graphics & Video Editor Intern',
-		linkedInProfileUrl: 'https://www.linkedin.com/in/drishti-mago-a95a10200/',
-	},
-	{
 		name: 'Alamjot Bedi',
 		profilePicUrl: 'https://cdn.sportsapp.co.in/2021/public/assets/team/design-alamjot.jpg',
 		designation: 'Motion Graphics & Video Editor Intern',
 		linkedInProfileUrl: 'https://www.linkedin.com/in/alamjot-singh-228953179/',
 	},
-
 ];
 
 /**
